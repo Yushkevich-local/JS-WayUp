@@ -36,7 +36,7 @@ const array = [
 ]
 
 array[7] = 'приехал';
-array[9] = 'нужных вещей,'
+array[9] = 'нужных веще';
 
 
 const result = `${array[3]} ${array[7]} ${array[0]} ${array[8]} ${array[11]} ${array[5]} ${array[9]} ${array[6]} ${array[4]} ${array[1]} ${array[12]} ${array[2]} ${array[10]}`;
