@@ -3,3 +3,16 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
+.center__wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rectangle{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    background: rgb(55, 167, 55);
+}
