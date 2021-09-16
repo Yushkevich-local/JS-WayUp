@@ -5,13 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Java-Homework</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="center__wrapper">
-        <div class="rectangle"></div>
+    <section class="tabs-section">
+        <h1>Tabs</h1>
+    <div class="tabs-block-wrapper">
+        <div id="tabs">
+            <div class="tab-btn active" data-btn="1">Tab 1</div>
+            <div class="tab-btn" data-btn="2">Tab 2</div>
+            <div class="tab-btn" data-btn="3">Tab 3</div>
+        </div>
+        <div id="contents">
+            <div class="content active" data-content="1">Content 1</div>
+            <div class="content" data-content="2">Content 2</div>
+            <div class="content" data-content="3">
+                <div class="tabs__wrapper">
+                    <div id="tabs-second">
+                        <div class="tab__btn active" data-btn="1">Tab 1</div>
+                        <div class="tab__btn" data-btn="2">Tab 2</div>
+                    </div>
+                    <div id="contents-second">
+                        <div class="tab__content active" data-content="1">Content 3.1</div>
+                        <div class="tab__content" data-content="2">Content 3.2</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <h1>Hello World!</h1>
+    </section>
+
+    <section class="modal-window">
+        <h1>Modal Window</h1>
+        <div class="flex-wrapper">
+            <button id="btn-open">Open</button>
+        </div>
+        <div id="wrapper-modal">
+            <div id="overlay"></div>
+            <div id="modal-window"> 
+                <div id="btn-close"></div>
+                <div class="content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea placeat tempora incidunt suscipit explicabo saepe quaerat fugiat pariatur reiciendis quo consequatur quos cum totam eaque, quibusdam earum neque labore minima?
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="slider">
+        <h1>Slider</h1>
+        <div class="flex-wrapper">
+            <div class="slider-wrapper">
+                <div class="slide active">
+                    <img src="img/img_1.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/img_2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/img_3.jpg" alt="">
+                </div>
+                <div id="btn-prev"></div>
+                <div id="btn-next"></div>
+            </div>
+        </div>
+        <div class="dots-wrapper">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
         
     <script src="script.js"></script>
 </body>
